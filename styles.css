@@ -3,6 +3,13 @@ body {
 }
 
 .logo {
-    text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.logo-img {
+    width: 50%;
+    height: 400px;
 }
