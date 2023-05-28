@@ -1,5 +1,6 @@
 body {
     background-color: #E9E8DC !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1rem !important;
     color: #6C7D3F !important;
 }
