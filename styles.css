@@ -4,3 +4,7 @@ body, p, a {
     font-size: 1rem !important;
     color: #6C7D3F !important;
 }
+
+a {
+    font-weight: bold;
+}
