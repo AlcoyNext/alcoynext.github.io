@@ -7,12 +7,24 @@ window.addEventListener('load', function () {
 
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/outdoors-v12',
+        style: 'mapbox://styles/alcoynext/cljsfzfr9019401p596srfj11',
         center: [-0.47298, 38.69826],
         zoom: 13
     });
 
     map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.ScaleControl());
+
+    map.addControl(
+        new MapboxDirections({
+            accessToken: mapboxgl.accessToken,
+            unit: 'metric',
+            profile: 'mapbox/walking',
+            language: 'es',
+            steps: true
+        }),
+        'top-left'
+    );
 
 })
 
