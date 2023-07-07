@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
 
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/outdoors-v12',
         center: [-0.47298, 38.69826],
         zoom: 13
     });
