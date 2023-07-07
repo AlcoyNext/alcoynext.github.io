@@ -1,3 +1,35 @@
+/* COLOR PALLETE */
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
+.primary {
+    color: #496727 !important;
+    background-color: #c9ee9e !important;
+}
+
+.secondary {
+    color: #59614e !important;
+    background-color: #dde6cd !important;
+}
+
+.tertiary {
+    color: #426462 !important;
+    background-color: #c5eae7 !important;
+}
+
+/* HTML */
 body, p, a {
     font-family: 'Montserrat', sans-serif !important;
     color: #6C7D3F !important;
@@ -10,15 +42,19 @@ body, p, a {
     right: 0;
     left: 0;
     height: 50px;
-    background-color: #E9E8DC !important;
+    background-color: #fefcf6 !important;
 }
 
 #menu {
-
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
 }
 
 #logo {
-    position: relative;
+    position: absolute;
     top: 5px;
     left: 50%;
     height: 40px;
@@ -31,7 +67,11 @@ body, p, a {
 }
 
 #search {
-    
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
 }
 
 /* MAP */
