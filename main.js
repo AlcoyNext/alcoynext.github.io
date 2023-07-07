@@ -12,9 +12,6 @@ window.addEventListener('load', function () {
         zoom: 13
     });
 
-    map.addControl(new mapboxgl.NavigationControl());
-    map.addControl(new mapboxgl.ScaleControl());
-
     map.addControl(
         new MapboxDirections({
             accessToken: mapboxgl.accessToken,
@@ -25,6 +22,17 @@ window.addEventListener('load', function () {
         }),
         'top-left'
     );
+    /* map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl,
+            language: 'es'
+        }),
+        'top-left'
+    ); */
+
+    map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.ScaleControl());
 
 })
 
