@@ -4,7 +4,7 @@
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;  /* Preferred icon size */
+    font-size: 40px;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -13,21 +13,6 @@
     white-space: nowrap;
     direction: ltr;
   }
-
-.primary {
-    color: #496727 !important;
-    background-color: #c9ee9e !important;
-}
-
-.secondary {
-    color: #59614e !important;
-    background-color: #dde6cd !important;
-}
-
-.tertiary {
-    color: #426462 !important;
-    background-color: #c5eae7 !important;
-}
 
 /* HTML */
 body, p, a {
