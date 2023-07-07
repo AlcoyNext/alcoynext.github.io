@@ -36,6 +36,7 @@ body, p, a {
     left: 5px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 #logo {
@@ -49,14 +50,7 @@ body, p, a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#search {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    width: 40px;
+    cursor: pointer;
 }
 
 /* MAP */
@@ -66,4 +60,25 @@ body, p, a {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+/* TOOLS */
+
+#tools {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    height: 50px;
+    width: 50%;
+    margin-left: -25%;
+    background-color: #fefcf6 !important;
+}
+
+#search {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 }
