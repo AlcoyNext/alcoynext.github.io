@@ -9,10 +9,24 @@ window.addEventListener('load', function () {
         container: 'map',
         style: 'mapbox://styles/alcoynext/cljsfzfr9019401p596srfj11',
         center: [-0.47298, 38.69826],
-        zoom: 13
+        zoom: 13,
+        language: 'es'
     });
 
-    /* Mapbox Geocoder
+    map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.ScaleControl());
+
+    map.on('load', () => {
+        
+    });
+
+    map.on('idle', () => {
+        
+    });
+})
+
+/* Mapbox Directions */
+function route_tools(){
     map.addControl(
         new MapboxDirections({
             accessToken: mapboxgl.accessToken,
@@ -23,9 +37,10 @@ window.addEventListener('load', function () {
         }),
         'top-left'
     );
-    */
+}
 
-    /* Mapbox Geocoder
+/* Mapbox Geocoder */
+function search_tools(){
     map.addControl(
         new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
@@ -34,10 +49,4 @@ window.addEventListener('load', function () {
         }),
         'top-left'
     );
-    */
-
-    map.addControl(new mapboxgl.NavigationControl());
-    map.addControl(new mapboxgl.ScaleControl());
-
-})
-
+}

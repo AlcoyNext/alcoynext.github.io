@@ -68,17 +68,21 @@ body, p, a {
     position: fixed;
     bottom: 0;
     left: 50%;
-    height: 50px;
+    height: 60px;
     width: 50%;
     margin-left: -25%;
+    display: flex;
+    justify-content: center;
+}
+
+.tools_button {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
     background-color: #fefcf6 !important;
 }
 
 #search {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
+    
 }
