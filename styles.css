@@ -4,7 +4,7 @@
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -12,10 +12,12 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  }
+}
 
 /* HTML */
-body, p, a {
+body,
+p,
+a {
     font-family: 'Montserrat', sans-serif !important;
     color: #6C7D3F !important;
 }
@@ -66,23 +68,45 @@ body, p, a {
 
 #tools {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
-    height: 60px;
-    width: 50%;
-    margin-left: -25%;
+    height: 46px;
+    width: auto;
+    padding: 0 5px;
+    margin-left: auto;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tools_button {
-    height: 40px;
-    width: 40px;
-    margin: 10px;
+    font-size: 20px ;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
     background-color: #fefcf6 !important;
+    border: 1px solid #6C7D3F;
 }
 
-#search {
-    
+#menu a:last-child {
+    border: none;
+}
+
+.tools_button:hover {
+    color: #fefcf6;
+    background-color: #6C7D3F !important;
+    border: 1px solid #6C7D3F;
+}
+
+#menu a.active {
+    background-color: #3887be;
+    color: #ffffff;
+}
+
+#menu a.active:hover {
+    background: #3074a4;
 }
