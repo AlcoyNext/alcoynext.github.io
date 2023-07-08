@@ -12,12 +12,16 @@
     white-space: nowrap;
     direction: ltr;
 }
-.material-big {
+.material-b {
     font-size: 40px;
 }
 
-.material-mid {
-    font-size: 30px;
+.material-m {
+    font-size: 32px;
+}
+
+.material-s {
+    font-size: 24px;
 }
 
 /* HTML */
@@ -85,24 +89,23 @@ a {
     top: 60px;
     left: 10px;
     height: auto;
-    width: 46px;
+    width: 36px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .layer {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     padding: 2px;
-    margin: 5px;
+    margin: 4px;
     cursor: pointer;
     border-radius: 5px;
     background-color: #fefcf6 !important;
-    border: 1px solid #6C7D3F;
 }
 
 .layer_space {
-    height: 10px;
+    height: 8px;
     width: 30px;
 }
 
@@ -113,7 +116,6 @@ a {
 .layer:hover {
     color: #fefcf6;
     background-color: #6C7D3F !important;
-    border: 1px solid #6C7D3F;
 }
 
 #menu a.active {
