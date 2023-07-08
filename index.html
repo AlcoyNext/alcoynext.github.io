@@ -43,21 +43,55 @@
     <header>
         <div id="nav">
             <div id="menu">
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined material-big">menu</span>
             </div>
             <div id="logo" onclick="window.open('https://alcoynext.com', '_self');"></div>
+            <div id="profile">
+                <span class="material-symbols-outlined material-big">account_circle</span>
+            </div>
         </div>
     </header>
     <main>
         <div id="map"></div>
+        <div id="layers">
+            <div id="city" class="layer" onclick="city_tools();">
+                <span class="material-symbols-outlined material-mid">directions_walk</span>
+            </div>
+            <div id="outdoor" class="layer" onclick="outdoor_tools();">
+                <span class="material-symbols-outlined material-mid">hiking</span>
+            </div>
+            <div id="outdoor" class="layer" onclick="outdoor_tools();">
+                <span class="material-symbols-outlined material-mid">castle</span>
+            </div>
+            <div class="layer_space"></div>
+            <div id="eat" class="layer" onclick="eat_tools();">
+                <span class="material-symbols-outlined material-mid">restaurant</span>
+            </div>
+            <div id="bed" class="layer" onclick="bed_tools();">
+                <span class="material-symbols-outlined material-mid">bed</span>
+            </div>
+            <div class="layer_space"></div>
+            <div id="bike" class="layer" onclick="">
+                <span class="material-symbols-outlined material-mid">directions_bike</span>
+            </div>
+            <div id="bus" class="layer" onclick="">
+                <span class="material-symbols-outlined material-mid">directions_bus</span>
+            </div>
+            <div id="car" class="layer" onclick="">
+                <span class="material-symbols-outlined material-mid">directions_car</span>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="tools">
-            <div id="route" class="tools_button" onclick="route_tools();">
-                <span class="material-symbols-outlined">route</span>
+            <div id="planner" class="tool" onclick="planner_tools();">
+                <span class="material-symbols-outlined material-mid">map</span>
             </div>
-            <div id="search" class="tools_button" onclick="search_tools();">
-                <span class="material-symbols-outlined">search</span>
+            <div id="direction" class="tool" onclick="direction_tools();">
+                <span class="material-symbols-outlined material-mid">directions</span>
+            </div>
+            <div id="search" class="tool" onclick="search_tools();">
+                <span class="material-symbols-outlined material-mid">search</span>
             </div>
         </div>
     </footer>

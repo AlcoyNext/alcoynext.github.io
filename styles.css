@@ -4,7 +4,6 @@
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
-    font-size: 30px;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -12,6 +11,13 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+}
+.material-big {
+    font-size: 40px;
+}
+
+.material-mid {
+    font-size: 30px;
 }
 
 /* HTML */
@@ -55,6 +61,15 @@ a {
     cursor: pointer;
 }
 
+#profile {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
 /* MAP */
 #map {
     position: fixed;
@@ -64,24 +79,18 @@ a {
     left: 0;
 }
 
-/* TOOLS */
-
-#tools {
+/* LAYERS */
+#layers {
     position: fixed;
-    bottom: 5px;
-    left: 50%;
-    height: 46px;
-    width: auto;
-    padding: 0 5px;
-    margin-left: auto;
+    top: 60px;
+    left: 10px;
+    height: auto;
+    width: 46px;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-.tools_button {
-    font-size: 20px ;
+.layer {
     height: 30px;
     width: 30px;
     padding: 2px;
@@ -92,11 +101,16 @@ a {
     border: 1px solid #6C7D3F;
 }
 
+.layer_space {
+    height: 10px;
+    width: 30px;
+}
+
 #menu a:last-child {
     border: none;
 }
 
-.tools_button:hover {
+.layer:hover {
     color: #fefcf6;
     background-color: #6C7D3F !important;
     border: 1px solid #6C7D3F;
@@ -109,4 +123,28 @@ a {
 
 #menu a.active:hover {
     background: #3074a4;
+}
+
+/* TOOLS */
+#tools {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    height: 46px;
+    width: 138px;
+    margin-left: -69px;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.tool {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fefcf6 !important;
+    border: 1px solid #6C7D3F;
 }

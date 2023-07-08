@@ -14,6 +14,15 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.ScaleControl());
+map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        trackUserLocation: true,
+        showUserHeading: true
+    })
+);
 
 map.on('load', () => {
 
@@ -24,7 +33,9 @@ map.on('idle', () => {
 });
 
 /* Mapbox Directions */
-function route_tools() {
+function direction_tools() {
+    route = document.querySelector("#route");
+
     map.addControl(
         new MapboxDirections({
             accessToken: mapboxgl.accessToken,
@@ -33,7 +44,7 @@ function route_tools() {
             language: 'es',
             steps: true
         }),
-        'top-left'
+        'top-right'
     );
 }
 
@@ -45,6 +56,6 @@ function search_tools() {
             mapboxgl: mapboxgl,
             language: 'es'
         }),
-        'top-left'
+        'top-right'
     );
 }
