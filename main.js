@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/alcoynext/cljsfzfr9019401p596srfj11',
     center: [-0.47298, 38.69826],
-    zoom: 13,
+    zoom: 12,
     language: 'es'
 });
 
