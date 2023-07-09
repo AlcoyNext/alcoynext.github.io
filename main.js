@@ -12,17 +12,20 @@ var map = new mapboxgl.Map({
     language: 'es'
 });
 
-map.addControl(new mapboxgl.NavigationControl());
-map.addControl(new mapboxgl.ScaleControl());
-map.addControl(
-    new mapboxgl.GeolocateControl({
-        positionOptions: {
-            enableHighAccuracy: true
-        },
-        trackUserLocation: true,
-        showUserHeading: true
-    })
-);
+const control_navigation = new mapboxgl.NavigationControl();
+map.addControl(control_navigation);
+
+const control_scale = new mapboxgl.ScaleControl();
+map.addControl(control_scale);
+
+const control_geolocate = new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true,
+    showUserHeading: true
+});
+map.addControl(control_geolocate);
 
 map.on('load', () => {
 
