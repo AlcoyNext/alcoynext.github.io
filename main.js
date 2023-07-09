@@ -27,6 +27,8 @@ const control_geolocate = new mapboxgl.GeolocateControl({
 });
 map.addControl(control_geolocate);
 
+
+
 map.on('load', () => {
 
 });
@@ -36,29 +38,25 @@ map.on('idle', () => {
 });
 
 /* Mapbox Directions */
-function direction_tools() {
-    route = document.querySelector("#route");
+const direction = new MapboxDirections({
+    accessToken: mapboxgl.accessToken,
+    unit: 'metric',
+    profile: 'mapbox/walking',
+    language: 'es',
+    steps: true
+});
 
-    map.addControl(
-        new MapboxDirections({
-            accessToken: mapboxgl.accessToken,
-            unit: 'metric',
-            profile: 'mapbox/walking',
-            language: 'es',
-            steps: true
-        }),
-        'top-right'
-    );
+function direction_tool() {
+    checkControl(direction, document.getElementById("direction"));
 }
 
 /* Mapbox Geocoder */
-function search_tools() {
-    map.addControl(
-        new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl,
-            language: 'es'
-        }),
-        'top-right'
-    );
+const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+    language: 'es'
+});
+
+function geocoder_tool() {
+    checkControl(geocoder, document.getElementById("geocoder"));
 }
