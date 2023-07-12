@@ -42,7 +42,7 @@ a {
     background-color: #fefcf6 !important;
 }
 
-#menu {
+#planner {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -133,8 +133,8 @@ a {
     bottom: 5px;
     left: 50%;
     height: 46px;
-    width: 138px;
-    margin-left: -69px;
+    width: 92px;
+    margin-left: -46px;
     border-radius: 5px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.5); 
