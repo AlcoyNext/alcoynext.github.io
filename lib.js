@@ -11,6 +11,15 @@ function checkControl(control, div){
     }
 }
 
+/* LAYERS */
+function layerPop(layer){
+    let element = document.getElementById(layer);
+    let x = element.offsetLeft;
+    let y = element.offsetTop;
+
+
+}
+
 function checkLayer(){
 
 }
