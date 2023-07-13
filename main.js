@@ -15,9 +15,6 @@ var map = new mapboxgl.Map({
 const control_navigation = new mapboxgl.NavigationControl();
 map.addControl(control_navigation);
 
-const control_scale = new mapboxgl.ScaleControl();
-map.addControl(control_scale);
-
 const control_geolocate = new mapboxgl.GeolocateControl({
     positionOptions: {
         enableHighAccuracy: true
